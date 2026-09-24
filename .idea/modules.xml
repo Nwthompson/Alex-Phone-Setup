@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Alex-Phone-Setup.iml" filepath="$PROJECT_DIR$/.idea/Alex-Phone-Setup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frameworks/base/core/core.iml" filepath="$PROJECT_DIR$/frameworks/base/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frameworks/base/services/services.iml" filepath="$PROJECT_DIR$/frameworks/base/services/services.iml" />
+    </modules>
+  </component>
+</project>

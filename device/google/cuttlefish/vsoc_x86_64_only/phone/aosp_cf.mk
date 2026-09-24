@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_NAME := aosp_cf_x86_64_only_phone
 PRODUCT_DEVICE := vsoc_x86_64_only
 PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Cuttlefish x86_64 phone 64-bit only
+PRODUCT_MODEL := Pixel 7 Pro
 
 # Window Extensions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
@@ -64,8 +64,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=$(PRODUCT_MANUFACTURER) \
     ro.soc.model=$(PRODUCT_DEVICE) \
-    ro.lockscreen.disable.default=true \
     ro.vendor.display.wake_to_home=true
+
+# vendor_init cannot set this default_prop. The product partition is loaded by init.
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lockscreen.disable.default=true
 
 # Ignore all Android.mk files
 PRODUCT_IGNORE_ALL_ANDROIDMK := true
